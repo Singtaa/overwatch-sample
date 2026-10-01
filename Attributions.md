@@ -1,54 +1,30 @@
-## Game Icons 
+# Attributions
 
-Icons provided under the Creative Commons 3.0 BY or CC0 if mentioned below.
+Every file under `assets/@overwatch-sample/`, where it came from, and its terms.
 
-Each sub-folders in this archive correspond to a different contributor :
+## Icon font (`icons.ttf`)
 
-- Lorc, http://lorcblog.blogspot.com
-- Delapouite, http://delapouite.com
-- John Colburn, http://ninmunanmu.com
-- Felbrigg, http://blackdogofdoom.blogspot.co.uk
-- John Redman, http://www.uniquedicetowers.com
-- Carl Olsen, https://twitter.com/unstoppableCarl
-- Sbed, http://opengameart.org/content/95-game-icons
-- PriorBlue
-- Willdabeast, http://wjbstories.blogspot.com
-- Viscious Speed, http://viscious-speed.deviantart.com - CC0
-- Lord Berandas, http://berandas.deviantart.com
-- Irongamer, http://ecesisllc.wix.com/home
-- HeavenlyDog, http://www.gnomosygoblins.blogspot.com
-- Lucas
-- Faithtoken, http://fungustoken.deviantart.com
-- Skoll
-- Andy Meneely, http://www.se.rit.edu/~andy/
-- Cathelineau
-- Kier Heyl
-- Aussiesim
-- Sparker, http://citizenparker.com
-- Zeromancer - CC0
-- Rihlsul
-- Quoting
-- Guard13007, https://guard13007.com
-- DarkZaitzev, http://darkzaitzev.deviantart.com
-- SpencerDub
-- GeneralAce135
-- Zajkonur
-- Catsu
-- Starseeker
-- Pepijn Poolman
-- Pierre Leducq
-- Caro Asercion
+Built with [Fontello](https://fontello.com) from four icons on [game-icons.net](https://game-icons.net), licensed [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/):
 
-Please, include a mention "Icons made by {author}" in your derivative work.
+| Glyph | Icon | Icons made by |
+|-------|------|---------------|
+| `U+E803` | [Burning skull](https://game-icons.net/1x1/skoll/burning-skull.html) | Skoll |
+| `U+E804` | [Bullet bill](https://game-icons.net/1x1/delapouite/bullet-bill.html) | Delapouite |
+| `U+E805` | [Trefoil shuriken](https://game-icons.net/1x1/lorc/trefoil-shuriken.html) | Lorc |
+| `U+E806` | [Thrown daggers](https://game-icons.net/1x1/lorc/thrown-daggers.html) | Lorc |
 
-If you use them in one of your project, don't hesitate to drop a message to delapouite@gmail.com or ping @GameIcons on twitter.
+The font also carries one unused glyph at `U+005F`, `emo-happy` from Fontello's Fontelico set (SIL OFL 1.1).
 
-More info and icons available at https://game-icons.net
+## Lightning texture sheet (`lightning.png`)
 
-## Lightning Texture Sheet
+From [Free 2D Impact FX](https://assetstore.unity.com/packages/vfx/particles/fire-explosions/free-2d-impact-fx-201222) by Inguz Media Studio, under the Unity Asset Store EULA. The copy here is premultiplied and downscaled from 8192px to 4096px, for the particle engine's blend. The flipbook in the original video came from a sheet that could not be redistributed, so the original sample switched to this one.
 
-Inguz Media Studio (https://assetstore.unity.com/packages/vfx/particles/fire-explosions/free-2d-impact-fx-201222)
+## Background and portrait (`bg.jpg`, `portrait.png`)
 
-## Ingame Screenshot
+An in-game Overwatch screenshot and hero portrait, captured by [@Singtaa](https://github.com/Singtaa).
 
-Taken by myself (@Singtaa). I'll license it as Creative Commons Attribution (CC BY) https://creativecommons.org/licenses/by/4.0/
+## Screenshots
+
+`docs/onejs-v1.jpg` and `docs/onejs-v3.jpg` (repository only, not in the npm package): the v1 sample and this one, for comparison.
+
+Overwatch and its art are the property of Blizzard Entertainment. This sample is not affiliated with or endorsed by Blizzard Entertainment.
