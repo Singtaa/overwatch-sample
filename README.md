@@ -66,7 +66,7 @@ The art ships in the package under `assets/@overwatch-sample/`. In the Editor, t
 ## How it is made
 
 - Styles are a USS string in `src/styles.ts`, compiled once at load. OneJS's Tailwind plugin does not scan `node_modules`, so a package cannot rely on the app's Tailwind.
-- The health bar and the ultimate ring are drawn with OneJS's batched `Painter`, one crossing into C# per repaint. The lightning is a particle playing an 8x8 flipbook.
+- The health bar, the ultimate ring and its lightning are drawn in code with OneJS's batched `Painter`, one crossing into C# per repaint. The lightning's flash and sparks come from the particle engine.
 - The icons are glyphs from a small Fontello font made from game-icons.net icons.
 
 ## OneJS v1

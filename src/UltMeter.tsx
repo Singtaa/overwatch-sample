@@ -1,15 +1,13 @@
-import { useEffect, useRef, useState } from "react"
-import { Painter, Text, View, useBatchedVectorContent, useParticles } from "onejs-react"
-import { Icons, art, icons } from "./assets"
+import { useEffect, useState } from "react"
+import { Painter, Text, View, useBatchedVectorContent } from "onejs-react"
+import { Icons, icons } from "./assets"
+import { Lightning } from "./Lightning"
 
 const SHAKE = [
     { x: 1, y: 1, r: 0 }, { x: -1, y: -2, r: -1 }, { x: -3, y: 0, r: 1 }, { x: 3, y: 2, r: 0 },
     { x: 1, y: -1, r: 1 }, { x: -1, y: 2, r: -1 }, { x: -3, y: 1, r: 0 }, { x: 3, y: 1, r: -1 },
     { x: -1, y: -1, r: 1 }, { x: 1, y: 2, r: 0 }, { x: 1, y: -2, r: -1 },
 ]
-
-const FLIPBOOK_FPS = 40
-const FLIPBOOK_FRAMES = 64
 
 export interface UltMeterProps {
     /** 0 to 1. */
@@ -63,29 +61,4 @@ function useShake(active: boolean) {
         return () => clearInterval(id)
     }, [active])
     return active ? SHAKE[index] : { x: 0, y: 0, r: 0 }
-}
-
-/**
- * The lightning around a full meter: one particle at a time playing the 8x8
- * flipbook, each at a random rotation. Mounted only while the ultimate is ready.
- */
-function Lightning({ size }: { size: number }) {
-    const ref = useRef(null)
-    const lifetime = FLIPBOOK_FRAMES / FLIPBOOK_FPS
-    const fx = useParticles(ref, {
-        max: 4,
-        texture: art("lightning.png"),
-        emitters: [{
-            position: [size / 2, size / 2],
-            rate: 1 / lifetime,
-            lifetime,
-            size,
-            rotation: [0, 360],
-            sheet: { cols: 8, rows: 8 },
-        }],
-    })
-    // The emitter's first spawn waits a full interval; start the first bolt now.
-    useEffect(() => { fx.burst({ x: size / 2, y: size / 2, count: 1 }) }, [])
-
-    return <View ref={ref} pickingMode="Ignore" className="ows-lightning" style={{ width: size, height: size, top: -size / 4, left: -size / 4 }} />
 }

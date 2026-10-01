@@ -15,9 +15,9 @@ Built with [Fontello](https://fontello.com) from four icons on [game-icons.net](
 
 The font also carries one unused glyph at `U+005F`, `emo-happy` from Fontello's Fontelico set (SIL OFL 1.1).
 
-## Lightning texture sheet (`lightning.png`)
+## Lightning
 
-From [Free 2D Impact FX](https://assetstore.unity.com/packages/vfx/particles/fire-explosions/free-2d-impact-fx-201222) by Inguz Media Studio, under the Unity Asset Store EULA. The copy here is premultiplied and downscaled from 8192px to 4096px, for the particle engine's blend. The flipbook in the original video came from a sheet that could not be redistributed, so the original sample switched to this one.
+No file: the discharge around a full ultimate is drawn in code (`src/Lightning.tsx`), with the particle engine's built-in sprite and the batched Painter. It replaces v1's texture sheet from the Unity Asset Store, whose license does not allow handing the file out on its own.
 
 ## Background and portrait (`bg.jpg`, `portrait.png`)
 
